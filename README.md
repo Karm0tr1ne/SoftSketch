@@ -12,6 +12,16 @@ This repo is for the HKU COMP7506 Smartphone Apps Development Group Project, whi
 > Note: MacOS currently only supports M1 chips.
 
 
+## How to use
+
+You can download this repository and open it as a new project in Unity. Remember to use git-lfs to correctly pull the Soft2D's binary files in the project:
+
+```
+git clone https://github.com/Karm0tr1ne/SoftSketch.git
+cd your/path/SoftSketch/
+git lfs pull
+```
+
 
 ## References
 
