@@ -1,6 +1,6 @@
 # SoftSketch
 
-This repo is for the HKU COMP7506 Smartphone Apps Development Group Project, which is a game demo using Soft2D plugin developed by Taichi to simulate the motion of fluids in 2D space.
+This repo is for the HKU COMP7506 Smartphone Apps Development Group Project, which is a game demo using Soft2D plugin developed by [taichi-dev](https://github.com/taichi-dev) to simulate the motion of fluids in 2D space.
 
 
 ## Environment Requirements
