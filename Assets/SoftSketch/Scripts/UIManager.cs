@@ -1,8 +1,10 @@
 using System.Collections.Generic;
 using Game;
 using UnityEngine;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
+using UnityEngine.ResourceManagement.AsyncOperations;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
@@ -10,22 +12,36 @@ public class UIManager : MonoBehaviour
     public Button settingsButton;
     public Button replayButton;
     public Button backButton;
-    [FormerlySerializedAs("skipButton")] public Button menuButton;
+    public Button menuButton;
     public Button nextStageButton;
     public GameObject settingPanel;
-
+    public Toggle enToggle;
+    public Toggle zhcnToggle;
+    public Toggle zhhkToggle;
+    private ToggleGroup _toggleGroup;
     public List<GameObject> slotGroup;
     
     public SkinData currData;
+    private const string LanguageKey = "SelectedLanguage";
+    
+    private void Awake()
+    {
+        _toggleGroup = GetComponent<ToggleGroup>();
+    }
 
     private void Start()
     {
         string sceneName = SceneManager.GetActiveScene().name;
-
         settingsButton?.onClick.AddListener(PauseLevel);
         backButton?.onClick.AddListener(PauseLevel);
         menuButton?.onClick.AddListener(() => GameManager.Instance.LoadMainMenu());
         nextStageButton?.onClick.AddListener(() => GameManager.Instance.LoadNextLevel(sceneName));
+        enToggle.group = _toggleGroup;
+        zhcnToggle.group = _toggleGroup;
+        zhhkToggle.group = _toggleGroup;
+        enToggle?.onValueChanged.AddListener(a => StartCoroutine(ChangeLanguage("en")));
+        zhcnToggle?.onValueChanged.AddListener(a => StartCoroutine(ChangeLanguage("zh-CN")));
+        zhhkToggle?.onValueChanged.AddListener(a => StartCoroutine(ChangeLanguage("zh-HK")));
         replayButton?.onClick.AddListener(() => GameManager.Instance.LoadLevel(sceneName));
         if (slotGroup[0] == null)
         {
@@ -35,6 +51,12 @@ public class UIManager : MonoBehaviour
                 slotGroup[i] = slot.GetChild(i).gameObject;
             }
         }
+
+        string savedLang = PlayerPrefs.GetString(LanguageKey);
+        enToggle.isOn = savedLang == "en";
+        zhcnToggle.isOn = savedLang == "zh-CN";
+        zhhkToggle.isOn = savedLang == "zh-HK";
+        StartCoroutine(ChangeLanguage(savedLang));
     }
 
     private void Update()
@@ -78,5 +100,14 @@ public class UIManager : MonoBehaviour
             }
             slotGroup[i].SetActive(true);
         }
+    }
+
+    public static IEnumerator<AsyncOperationHandle<LocalizationSettings>> ChangeLanguage(string langCode)
+    {
+        yield return LocalizationSettings.InitializationOperation;
+        PlayerPrefs.SetString(LanguageKey, langCode);
+        PlayerPrefs.Save();
+        Locale locale = LocalizationSettings.AvailableLocales.GetLocale(langCode);
+        LocalizationSettings.Instance.SetSelectedLocale(locale);
     }
 }
