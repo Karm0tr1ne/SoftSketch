@@ -113,5 +113,10 @@ namespace Game
             int nextLevelNum = currLevelNum == 10 ? 1 : ++currLevelNum;
             SceneManager.LoadScene("Level " + nextLevelNum);
         }
+
+        public void LoadMainMenu()
+        {
+            SceneManager.LoadScene("Menu");
+        }
     }
 }

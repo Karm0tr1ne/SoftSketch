@@ -2,19 +2,19 @@ using System.Collections.Generic;
 using Game;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    [Header("UI Objects")]
     public Button settingsButton;
     public Button replayButton;
     public Button backButton;
-    public Button skipButton;
+    [FormerlySerializedAs("skipButton")] public Button menuButton;
     public Button nextStageButton;
     public GameObject settingPanel;
 
-    [Tooltip("UI Slot Group")] public List<GameObject> slotGroup;
+    public List<GameObject> slotGroup;
     
     public SkinData currData;
 
@@ -24,7 +24,7 @@ public class UIManager : MonoBehaviour
 
         settingsButton?.onClick.AddListener(PauseLevel);
         backButton?.onClick.AddListener(PauseLevel);
-        skipButton?.onClick.AddListener(() => GameManager.Instance.LoadNextLevel(sceneName));
+        menuButton?.onClick.AddListener(() => GameManager.Instance.LoadMainMenu());
         nextStageButton?.onClick.AddListener(() => GameManager.Instance.LoadNextLevel(sceneName));
         replayButton?.onClick.AddListener(() => GameManager.Instance.LoadLevel(sceneName));
         if (slotGroup[0] == null)
@@ -51,10 +51,6 @@ public class UIManager : MonoBehaviour
         GameManager.Instance.IsPause = !GameManager.Instance.IsPause;
     }
     
-    /// <summary>
-    /// Load level's information through level data
-    /// </summary>
-    /// <param name="invList">inventory list</param>
     public void UpdateInventories(List<Inventory> invList)
     {
         for (int i = 0; i < invList.Count; i++)
