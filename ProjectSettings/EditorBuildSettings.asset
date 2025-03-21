@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/SoftSketch/Scenes/Menu.unity
+    guid: 2a138cf9f9382ff4795694dfaccebafc
   - enabled: 1
     path: Assets/SoftSketch/Scenes/Level 1.unity
     guid: 5dab5f20953d7e249ba014ab208c413c
@@ -38,9 +38,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SoftSketch/Scenes/Level 10.unity
     guid: 2b15233bfe55dac45ac7f4180a631b43
-  - enabled: 1
-    path: Assets/SoftSketch/Scenes/Menu.unity
-    guid: 2a138cf9f9382ff4795694dfaccebafc
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: f6f30867c4b0cb549a522ee5d2dd1f06,
       type: 2}
