@@ -154,4 +154,4 @@ MonoBehaviour:
   isDynamic: 0
   linear_velocity: {x: 0, y: 0}
   angular_velocity: 0
-  autoUpdate: 0
+  autoCorrection: 0

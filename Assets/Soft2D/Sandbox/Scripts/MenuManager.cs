@@ -13,24 +13,16 @@ public class MenuManager : MonoBehaviour
     public Button exitButton;
 
     public GameObject settingsPanel;
+    public Button closeSettingsButton;
     public GameObject levelPanel;
 
     private void Start()
     {
-        startButton?.onClick.AddListener(LoadFirstLevel);
+        startButton?.onClick.AddListener(() => SceneManager.LoadScene("Level 1"));
         levelButton?.onClick.AddListener(() => levelPanel.SetActive(true));
         settingsButton?.onClick.AddListener(() => settingsPanel.SetActive(true));
         exitButton?.onClick.AddListener(ExitGame);
-    }
-
-    private void LoadFirstLevel()
-    {
-        LoadLevel(1);
-    }
-
-    private void LoadLevel(int i)
-    {
-        SceneManager.LoadScene("Level " + i);
+        closeSettingsButton?.onClick.AddListener(() => settingsPanel.SetActive(false));
     }
 
     private void ExitGame()
