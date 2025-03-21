@@ -2324,13 +2324,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settingsButton: {fileID: 7292076413176537429}
   replayButton: {fileID: 7292076412367778661}
-  backButton: {fileID: 5844549968251319642}
-  menuButton: {fileID: 8594498805408145871}
-  nextStageButton: {fileID: 7523725021141704292}
-  settingPanel: {fileID: 4981097013851134409}
-  enToggle: {fileID: 2469136397847764116}
-  zhcnToggle: {fileID: 6212740454226023257}
-  zhhkToggle: {fileID: 5387993192605131041}
   slotGroup:
   - {fileID: 7871777604380830688}
   - {fileID: 1161309370944379864}
@@ -2344,6 +2337,15 @@ MonoBehaviour:
   - {fileID: 1161309371271909730}
   - {fileID: 1161309370844998910}
   - {fileID: 1161309370352737605}
+  settingPanel: {fileID: 4981097013851134409}
+  enToggle: {fileID: 2469136397847764116}
+  zhcnToggle: {fileID: 6212740454226023257}
+  zhhkToggle: {fileID: 5387993192605131041}
+  backButton: {fileID: 5844549968251319642}
+  menuButton: {fileID: 8594498805408145871}
+  volumeSlider: {fileID: 7906863283330942471}
+  nextStageButton: {fileID: 7523725021141704292}
+  returnButton: {fileID: 4590269048317670021}
   currData: {fileID: 11400000, guid: 9dc069a831f953a4e91c625d23366d93, type: 2}
 --- !u!114 &2993901628803859959
 MonoBehaviour:
@@ -3265,7 +3267,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []

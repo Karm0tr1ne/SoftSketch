@@ -9,17 +9,24 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+    [Header("Main Panel")]
     public Button settingsButton;
     public Button replayButton;
-    public Button backButton;
-    public Button menuButton;
-    public Button nextStageButton;
+    public List<GameObject> slotGroup;
+    [Header("Setting Panel")]
     public GameObject settingPanel;
     public Toggle enToggle;
     public Toggle zhcnToggle;
     public Toggle zhhkToggle;
+    public Button backButton;
+    public Button menuButton;
+    public Slider volumeSlider;
+    private AudioSource bgmSource;
+    [Header("Win Panel")]
+    public Button nextStageButton;
+    public Button returnButton;
+    
     private ToggleGroup _toggleGroup;
-    public List<GameObject> slotGroup;
     
     public SkinData currData;
     private const string LanguageKey = "SelectedLanguage";
@@ -27,6 +34,7 @@ public class UIManager : MonoBehaviour
     private void Awake()
     {
         _toggleGroup = GetComponent<ToggleGroup>();
+        bgmSource = GameObject.Find("AudioManager").GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -35,7 +43,9 @@ public class UIManager : MonoBehaviour
         settingsButton?.onClick.AddListener(PauseLevel);
         backButton?.onClick.AddListener(PauseLevel);
         menuButton?.onClick.AddListener(() => GameManager.Instance.LoadMainMenu());
+        volumeSlider?.onValueChanged.AddListener(val => bgmSource.volume = val);
         nextStageButton?.onClick.AddListener(() => GameManager.Instance.LoadNextLevel(sceneName));
+        returnButton?.onClick.AddListener(() => GameManager.Instance.LoadMainMenu());
         enToggle.group = _toggleGroup;
         zhcnToggle.group = _toggleGroup;
         zhhkToggle.group = _toggleGroup;

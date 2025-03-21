@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3785404050484907315}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1152.6532, y: 536.02264, z: 7.71286}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -65,7 +65,7 @@ MonoBehaviour:
   forceFieldScale: 1.1
   gravity: {x: 0, y: -50}
   timeStep: 0.004
-  enableDebugTools: 0
+  enableDebuggingTools: 0
   shaderType: 0
   enableWorldBoundary: 1
   collisionType: 0

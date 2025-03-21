@@ -17,6 +17,8 @@ public class MenuManager : MonoBehaviour
     public Toggle zhcnToggle;
     public Toggle zhhkToggle;
     private ToggleGroup _toggleGroup;
+    public Slider volumeSlider;
+    private AudioSource bgmSource;
     [Header("Level Panel")]
     public GameObject levelPanel;
     public List<Button> levelButtons;
@@ -27,6 +29,7 @@ public class MenuManager : MonoBehaviour
     private void Awake()
     {
         _toggleGroup = GetComponent<ToggleGroup>();
+        bgmSource = GameObject.Find("AudioManager").GetComponent<AudioSource>();
     }
 
     private void Start()
@@ -42,6 +45,7 @@ public class MenuManager : MonoBehaviour
         enToggle?.onValueChanged.AddListener(a => StartCoroutine(UIManager.ChangeLanguage("en")));
         zhcnToggle?.onValueChanged.AddListener(a => StartCoroutine(UIManager.ChangeLanguage("zh-CN")));
         zhhkToggle?.onValueChanged.AddListener(a => StartCoroutine(UIManager.ChangeLanguage("zh-HK")));
+        volumeSlider?.onValueChanged.AddListener(val => bgmSource.volume = val);
         closeLevelButton?.onClick.AddListener(() => levelPanel.SetActive(false));
         for (int i = 0; i < 10; i++)
         {
