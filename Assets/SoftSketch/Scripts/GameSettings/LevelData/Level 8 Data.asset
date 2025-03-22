@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Level 8 Data
   m_EditorClassIdentifier: 
   Inventories: []
-  levelName: 'Level 8 : Maze'
-  volumeGoal: 50
+  levelName: 'Level 8 : Finger'
+  volumeGoal: 100

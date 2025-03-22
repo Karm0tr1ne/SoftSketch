@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330474375263d8e40addc8aeeca4c63d, type: 3}
   m_Name: Level 6 Data
   m_EditorClassIdentifier: 
-  Inventories: []
-  levelName: 'Level 6 : Finger'
+  Inventories:
+  - Type: 2
+    InventoryNum: 1
+  levelName: 'Level 6 : Warmer!'
   volumeGoal: 100
