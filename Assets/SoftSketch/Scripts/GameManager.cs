@@ -109,9 +109,9 @@ namespace Game
         public void LoadNextLevel(string levelName)
         {
             string[] words = levelName.Split(' ');
-            int currLevelNum = int.Parse(words[1]);
-            int nextLevelNum = currLevelNum == 10 ? 1 : ++currLevelNum;
-            SceneManager.LoadScene("Level " + nextLevelNum);
+            int nextLevelNum = int.Parse(words[1]) + 1;
+            string nextLevel = nextLevelNum != 11 ? "Level " + nextLevelNum : "Menu";
+            SceneManager.LoadScene(nextLevel);
         }
 
         public void LoadMainMenu()
