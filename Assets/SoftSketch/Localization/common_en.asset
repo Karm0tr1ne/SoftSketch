@@ -79,6 +79,11 @@ MonoBehaviour:
       flow"
     m_Metadata:
       m_Items: []
+  - m_Id: 281187838513152
+    m_Localized: "This\u2191 means you can rotate the device to change the gravity
+      of the fluid!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: SkinData
   m_EditorClassIdentifier: 
   Square: {fileID: 21300000, guid: 3fe8eebca8a065141b973f7bd6467c8b, type: 3}
-  Triangle: {fileID: 0}
+  Interact: {fileID: 0}
   Heater: {fileID: 21300000, guid: 38de38c3652684f4096c01acceaa2264, type: 3}
+  Gyro: {fileID: 21300000, guid: 1cc06f1bb7818304d80477f817c2f28c, type: 3}

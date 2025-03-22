@@ -111,7 +111,7 @@ public class UIManager : MonoBehaviour
             if (slotGroup[i].transform.GetChild(2).TryGetComponent(out Text text))
             {
                 text.gameObject.SetActive(true);
-                text.text = invList[i].InventoryNum.ToString();
+                text.text = invList[i].InventoryNum == 0 ? "" : invList[i].InventoryNum.ToString();
             }
             slotGroup[i].SetActive(true);
         }
