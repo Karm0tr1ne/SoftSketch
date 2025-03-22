@@ -24,7 +24,9 @@ public class DestinationBase : MonoBehaviour
         {
             if (volume >= GameManager.Instance.lvlData.volumeGoal)
             {
-                GameObject.Find("Canvas").transform.GetChild(3).gameObject.SetActive(true);
+                Transform canvas = GameObject.Find("Canvas").transform;
+                canvas.GetChild(3).gameObject.SetActive(true); // find win panel and set active
+                canvas.GetChild(6).gameObject.SetActive(false); // find tutorial and set not active
                 GameManager.Instance.IsPause = true;
             }
             else

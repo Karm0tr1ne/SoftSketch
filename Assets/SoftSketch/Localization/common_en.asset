@@ -62,6 +62,23 @@ MonoBehaviour:
     m_Localized: Level Complete!!
     m_Metadata:
       m_Items: []
+  - m_Id: 244904256786432
+    m_Localized: "1. Click\u2191 here to select blocks"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 245152819630080
+    m_Localized: "Click here to replay this level\u2192"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 245094598496256
+    m_Localized: 3. Your task is to fill this beaker with water
+    m_Metadata:
+      m_Items: []
+  - m_Id: 245061526409216
+    m_Localized: "2. Place the blocks here\u2192 to change the direction of water
+      flow"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

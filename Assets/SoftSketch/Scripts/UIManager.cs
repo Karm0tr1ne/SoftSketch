@@ -25,6 +25,7 @@ public class UIManager : MonoBehaviour
     [Header("Win Panel")]
     public Button nextStageButton;
     public Button returnButton;
+    public GameObject tutorial;
     
     private ToggleGroup _toggleGroup;
     
@@ -79,6 +80,7 @@ public class UIManager : MonoBehaviour
 
     private void PauseLevel()
     {
+        tutorial.SetActive(!tutorial.activeSelf);
         settingPanel?.SetActive(!GameManager.Instance.IsPause);
         GameManager.Instance.IsPause = !GameManager.Instance.IsPause;
     }
