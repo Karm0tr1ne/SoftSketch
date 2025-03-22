@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330474375263d8e40addc8aeeca4c63d, type: 3}
   m_Name: Level 10 Data
   m_EditorClassIdentifier: 
-  Inventories: []
+  Inventories:
+  - Type: 0
+    InventoryNum: 10
+  - Type: 3
+    InventoryNum: 0
   levelName: 'Level 10 : Destination'
   volumeGoal: 200

@@ -22,7 +22,10 @@ EditorBuildSettings:
     guid: 10b70ba008738724aa06039bc42fc29a
   - enabled: 1
     path: Assets/SoftSketch/Scenes/Level 5.unity
-    guid: 8b3aea0bea8b7e54dbaefa5e59c23d66
+    guid: 691700903e0967b4eac90587f299e8c0
+  - enabled: 1
+    path: Assets/SoftSketch/Scenes/Level 6.unity
+    guid: ee2345071e0e1fa4daf87c472fbd1fa9
   - enabled: 1
     path: Assets/SoftSketch/Scenes/Level 7.unity
     guid: 97762011b1dd9ed30923c7f80be3b7c9
@@ -32,9 +35,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/SoftSketch/Scenes/Level 9.unity
     guid: 52b44b76ee7151cef876f837c79c71be
-  - enabled: 1
-    path: Assets/SoftSketch/Scenes/Level 5.unity
-    guid: 691700903e0967b4eac90587f299e8c0
   - enabled: 1
     path: Assets/SoftSketch/Scenes/Level 10.unity
     guid: 2b15233bfe55dac45ac7f4180a631b43

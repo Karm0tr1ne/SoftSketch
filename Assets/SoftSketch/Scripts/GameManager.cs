@@ -99,6 +99,10 @@ namespace Game
         {
             MouseDown();
             uiManager.UpdateInventories(inventoriesRemain);
+            if (Input.GetKeyDown(KeyCode.H))
+            {
+                LoadNextLevel(SceneManager.GetActiveScene().name);
+            }
         }
 
         public void LoadLevel(string levelName)
