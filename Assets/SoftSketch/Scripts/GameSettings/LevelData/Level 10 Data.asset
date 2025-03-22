@@ -18,4 +18,4 @@ MonoBehaviour:
   - Type: 3
     InventoryNum: 0
   levelName: 'Level 10 : Destination'
-  volumeGoal: 200
+  volumeGoal: 100

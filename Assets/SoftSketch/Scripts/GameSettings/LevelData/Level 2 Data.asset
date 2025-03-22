@@ -16,4 +16,4 @@ MonoBehaviour:
   - Type: 0
     InventoryNum: 1
   levelName: 'Level 2 : knockout'
-  volumeGoal: 300
+  volumeGoal: 100

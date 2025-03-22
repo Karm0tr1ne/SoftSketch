@@ -16,4 +16,4 @@ MonoBehaviour:
   - Type: 1
     InventoryNum: 0
   levelName: 'Level 8 : Swipe it!'
-  volumeGoal: 300
+  volumeGoal: 100

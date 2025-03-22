@@ -2009,7 +2009,7 @@ MonoBehaviour:
   lifetime: 100
   materialType: 1
   density: 1000
-  youngsModulus: 0.3
+  youngsModulus: 0.5
   poissonsRatio: 0.2
   particleTag: 2
   uniformColor:

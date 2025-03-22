@@ -18,4 +18,4 @@ MonoBehaviour:
   - Type: 3
     InventoryNum: 0
   levelName: 'Level 6 : Maze'
-  volumeGoal: 50
+  volumeGoal: 100
