@@ -15,5 +15,5 @@ MonoBehaviour:
   Inventories:
   - Type: 1
     InventoryNum: 0
-  levelName: 'Level 8 : Finger'
-  volumeGoal: 100
+  levelName: 'Level 8 : Swipe it!'
+  volumeGoal: 300

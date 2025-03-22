@@ -13,9 +13,7 @@ MonoBehaviour:
   m_Name: Level 5 Data
   m_EditorClassIdentifier: 
   Inventories:
-  - Type: 0
-    InventoryNum: 6
   - Type: 3
     InventoryNum: 0
-  levelName: 'Level 5 : Maze'
-  volumeGoal: 50
+  levelName: 'Level 5 : Flip'
+  volumeGoal: 100

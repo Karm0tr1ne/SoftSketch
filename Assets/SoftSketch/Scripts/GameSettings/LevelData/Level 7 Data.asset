@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level 7 Data
   m_EditorClassIdentifier: 
   Inventories:
-  - Type: 1
-    InventoryNum: 0
-  levelName: 'Level 7 : Swipe it!'
-  volumeGoal: 300
+  - Type: 2
+    InventoryNum: 1
+  levelName: 'Level 7 : Warmer!'
+  volumeGoal: 100
