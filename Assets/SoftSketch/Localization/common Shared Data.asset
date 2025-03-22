@@ -87,6 +87,10 @@ MonoBehaviour:
     m_Key: tutorial_7_1
     m_Metadata:
       m_Items: []
+  - m_Id: 299723436773376
+    m_Key: tutorial_8_1
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

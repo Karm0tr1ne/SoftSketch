@@ -6,7 +6,7 @@ using Taichi.Soft2D.Generated;
 using Taichi.Soft2D.Plugin;
 using UnityEngine;
 
-public class BoundaryManager : MonoBehaviour
+public class BoundaryBase : MonoBehaviour
 {
     private ETrigger _eTrigger;
 

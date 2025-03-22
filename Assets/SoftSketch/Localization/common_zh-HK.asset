@@ -90,6 +90,10 @@ MonoBehaviour:
     m_Localized: "\u9019\u2191\u4EE3\u8868\u4F60\u53EF\u4EE5\u6ED1\u52D5\u5C4F\u5E55\u5C0D\u6C34\u65BD\u52A0\u529B!"
     m_Metadata:
       m_Items: []
+  - m_Id: 299723436773376
+    m_Localized: "\u9664\u4E86\u6C34\u4EE5\u5916\uFF0C\u4F60\u9084\u53EF\u4EE5\u7D66\u5176\u5B83\u7269\u9AD4\u65BD\u52A0\u529B:)"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
