@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level 9 Data
   m_EditorClassIdentifier: 
   Inventories:
-  - Type: 1
+  - Type: 0
     InventoryNum: 1
   levelName: 'Level 9 : Flip'
   volumeGoal: 100

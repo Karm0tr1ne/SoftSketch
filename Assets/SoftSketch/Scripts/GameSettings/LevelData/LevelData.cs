@@ -11,9 +11,10 @@ public struct Inventory
 
 public enum InventoryType
 {
-    Triangle,
     Square,
+    Interact,
     Heater,
+    Gyro,
 }
 
 [CreateAssetMenu(fileName = "LevelData",menuName = "ScriptableObject/LevelData",order=1)]

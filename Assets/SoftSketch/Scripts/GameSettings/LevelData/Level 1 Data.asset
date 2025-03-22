@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Level 1 Data
   m_EditorClassIdentifier: 
   Inventories:
-  - Type: 1
-    InventoryNum: 20
+  - Type: 0
+    InventoryNum: 10
   levelName: 'Level 1 : where dream begins'
   volumeGoal: 100

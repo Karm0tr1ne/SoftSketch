@@ -95,11 +95,14 @@ public class UIManager : MonoBehaviour
                     case InventoryType.Square:
                         image.sprite = currData.Square;
                         break;
-                    case InventoryType.Triangle:
-                        image.sprite = currData.Triangle;
+                    case InventoryType.Interact:
+                        image.sprite = currData.Interact;
                         break;
                     case InventoryType.Heater:
                         image.sprite = currData.Heater;
+                        break;
+                    case InventoryType.Gyro:
+                        image.sprite = currData.Gyro;
                         break;
                 }
             }
