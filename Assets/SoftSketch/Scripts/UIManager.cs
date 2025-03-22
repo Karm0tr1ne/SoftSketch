@@ -97,8 +97,8 @@ public class UIManager : MonoBehaviour
                     case InventoryType.Square:
                         image.sprite = currData.Square;
                         break;
-                    case InventoryType.Interact:
-                        image.sprite = currData.Interact;
+                    case InventoryType.Swipe:
+                        image.sprite = currData.Swipe;
                         break;
                     case InventoryType.Heater:
                         image.sprite = currData.Heater;

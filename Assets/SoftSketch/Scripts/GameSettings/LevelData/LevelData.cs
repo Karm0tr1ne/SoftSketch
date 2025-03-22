@@ -12,7 +12,7 @@ public struct Inventory
 public enum InventoryType
 {
     Square,
-    Interact,
+    Swipe,
     Heater,
     Gyro,
 }

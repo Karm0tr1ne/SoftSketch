@@ -89,6 +89,10 @@ MonoBehaviour:
       water!"
     m_Metadata:
       m_Items: []
+  - m_Id: 291469981831168
+    m_Localized: "This\u2191 means you can swipe the screen to add force to the water!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

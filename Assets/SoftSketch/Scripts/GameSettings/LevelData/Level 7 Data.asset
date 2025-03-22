@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 330474375263d8e40addc8aeeca4c63d, type: 3}
   m_Name: Level 7 Data
   m_EditorClassIdentifier: 
-  Inventories: []
-  levelName: 'Level 7 : Sand'
-  volumeGoal: 100
+  Inventories:
+  - Type: 1
+    InventoryNum: 0
+  levelName: 'Level 7 : Swipe it!'
+  volumeGoal: 300
