@@ -84,6 +84,11 @@ MonoBehaviour:
       of the fluid!"
     m_Metadata:
       m_Items: []
+  - m_Id: 285988747923456
+    m_Localized: "This\u2191 means you can click the screen to melt the snow into
+      water!"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
