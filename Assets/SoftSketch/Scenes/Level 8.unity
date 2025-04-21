@@ -421,7 +421,7 @@ PrefabInstance:
         type: 3}
       propertyPath: lvlData
       value: 
-      objectReference: {fileID: 11400000, guid: 456ebd75c455330a0b8e345a67b4580c,
+      objectReference: {fileID: 11400000, guid: 8e336ee77a9449c43a7f2dda56dc6c7c,
         type: 2}
     - target: {fileID: 3785404050484907313, guid: 3fdcf0379bda1bb42a480291814196e0,
         type: 3}
@@ -2798,7 +2798,7 @@ PrefabInstance:
     - target: {fileID: 3949743919671436436, guid: dcf12b49f3b24a84abf5c8e11c6156d8,
         type: 3}
       propertyPath: orthographic size
-      value: 1.0653061
+      value: 1.1294061
       objectReference: {fileID: 0}
     - target: {fileID: 3949743919671436438, guid: dcf12b49f3b24a84abf5c8e11c6156d8,
         type: 3}
