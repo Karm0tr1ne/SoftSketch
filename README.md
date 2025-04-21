@@ -7,7 +7,7 @@ This repo is for the HKU COMP7506 Smartphone Apps Development Group Project, whi
 
 | Unity Version | Graphics API    | Rendering Pipeline | Scripting Backend |
 | ------------- | --------------- | ------------------ | ----------------- |
-| 2021.3.22f1c1 | Vulkan or Metal | Built-in or URP    | IL2CPP            |
+| [2021.3.22f1c1](https://unity.cn/release-notes/lts/2021/2021.3.22f1) | Vulkan or Metal | Built-in or URP    | IL2CPP            |
 
 > Note: MacOS currently only supports M1 chips.
 
